@@ -1,0 +1,98 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+ #score {
+    display: grid;
+    justify-content: flex-end;
+    margin-right: 200px;
+    color: rgb(160, 214, 188);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: grid;
+    border: 40px solid rgb(160, 214, 188);
+    border-bottom: none;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: .5px;
+    align-content: flex-start;
+    height: 88vh;
+}
+
+.black-brick {
+    height: 40px;
+    margin: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px;  
+} 
+
+.brick-red {
+    height: 40px;
+    margin: 1px; 
+    margin-bottom: 3px;  
+    background-color: red;
+    border-radius: 4px;
+} 
+
+.brick-yellow {
+    height: 40px;
+    margin: 1px; 
+    margin-bottom: 3px;  
+    background-color: yellow;
+    border-radius: 4px;
+} 
+
+.brick-green {
+    height: 40px;
+    margin: 1px; 
+    margin-bottom: 3px;  
+    background-color: green;
+    border-radius: 4px;
+} 
+
+.brick-blue {
+    height: 40px;
+    margin: 1px; 
+    margin-bottom: 3px;  
+    background-color: blue;
+    border-radius: 4px;
+} 
+
+#ball1 {
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background-color: white;
+}
+
+#ball2 {
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    left: 165px;
+    background-color: white;
+}
+
+#ball3 {
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    background-color: white;
+}
+
+#paddle {
+    display: grid;
+    grid-template-columns: 200px;
+    max-width: 200px;
+    height: 15px;
+    background-color: rgb(160, 214, 188);
+    margin-left: 540px;
+}
